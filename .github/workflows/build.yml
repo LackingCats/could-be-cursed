@@ -21,7 +21,7 @@ jobs:
           java-version: 17
           java-package: jdk
 
-      - name: Build C2ME
+      - name: Build CBC
         run: |
           ./gradlew clean build --stacktrace
 
