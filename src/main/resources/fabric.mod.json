@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/cbc/icon.png",
+  "icon": "assets/cbc/meta/icon.png",
 
   "environment": "*",
   "entrypoints": {
