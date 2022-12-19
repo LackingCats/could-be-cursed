@@ -1,0 +1,16 @@
+[13:01:45] [main/INFO] (FabricLoader/GameProvider) Loading Minecraft 1.18.1 with Fabric Loader 0.14.11
+[13:01:45] [main/WARN] (FabricLoader/Resolution) Mod resolution failed
+[13:01:45] [main/INFO] (FabricLoader/Resolution) Immediate reason: [HARD_DEP_NO_CANDIDATE cbc 0.0.1-1.18.1 {depends fabricloader @ [>=0.46.6]}, ROOT_FORCELOAD_SINGLE cbc 0.0.1-1.18.1]
+[13:01:45] [main/INFO] (FabricLoader/Resolution) Reason: [HARD_DEP cbc 0.0.1-1.18.1 {depends fabricloader @ [>=0.46.6]}]
+[13:01:45] [main/INFO] (FabricLoader/Resolution) Fix: add [], remove [], replace [[fabricloader 0.14.11] -> add:fabricloader 0.46.6 ([[0.46.6,∞)])]
+[13:01:45] [main/ERROR] (FabricLoader) Incompatible mod set!
+net.fabricmc.loader.impl.FormattedException: Mod resolution encountered an incompatible mod set!
+A potential solution has been determined:
+	 - Replace mod 'Fabric Loader' (fabricloader) 0.14.11 with version 0.46.6 or later.
+Unmet dependency listing:
+	 - Mod 'Could Be Cursed' (cbc) 0.0.1-1.18.1 requires version 0.46.6 or later of mod 'Fabric Loader' (fabricloader), but only the wrong version is present: 0.14.11!
+	at net.fabricmc.loader.impl.FabricLoaderImpl.load(FabricLoaderImpl.java:190) ~[fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:148) ~[fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:68) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23) [fabric-loader-0.14.11.jar:?]
+	at net.fabricmc.devlaunchinjector.Main.main(Main.java:86) [dev-launch-injector-0.2.1+build.8.jar:?]
