@@ -1,0 +1,32 @@
+name: Build CBC
+
+on:
+  push: {}
+  pull_request: {}
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v2
+        with:
+          distribution: 'zulu'
+          java-version: 17
+          java-package: jdk
+
+      - name: Build C2ME
+        run: |
+          ./gradlew clean build --stacktrace
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: cbc
+          path: 'build/libs/*.jar'
