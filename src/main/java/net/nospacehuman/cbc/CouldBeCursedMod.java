@@ -1,6 +1,7 @@
 package net.nospacehuman.cbc;
 
 import net.fabricmc.api.ModInitializer;
+import net.nospacehuman.cbc.block.ModBlocks;
 import net.nospacehuman.cbc.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ public class CouldBeCursedMod implements ModInitializer {
 	public void onInitialize() {
 
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 
 		LOGGER.debug(MOD_REGISTRY_NAME);
 	}
