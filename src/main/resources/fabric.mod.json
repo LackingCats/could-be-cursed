@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "cbc",
+  "version": "${version}",
+
+  "name": "Could Be Cursed",
+  "description": "title",
+  "authors": [
+    "Ascende Supirius"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT",
+  "icon": "assets/cbc/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.nospacehuman.cbc.CouldBeCursedMod"
+    ]
+  },
+  "mixins": [
+    "cbc.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.46.6",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
