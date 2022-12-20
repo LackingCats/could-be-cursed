@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "cbc:totalitarianite_shrapnel"
+    },
+    "X": {
+      "item": "minecraft:coal_block"
+    }
+  },
+  "result": {
+    "item": "cbc:totalitarianite_shrapnel_matrix"
+  }
+}

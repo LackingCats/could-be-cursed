@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "cbc:nether_totalitarianite_ore"
+  },
+  "result": "cbc:totalitarianite_nugget",
+  "experience": 45.15,
+  "cookingtime": 200
+}

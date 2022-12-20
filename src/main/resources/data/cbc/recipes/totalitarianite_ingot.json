@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#X#"
+  ],
+  "key": {
+    "#": {
+      "item": "cbc:totalitarianite_shrapnel_matrix"
+    },
+    "X": {
+      "item": "minecraft:soul_campfire"
+    }
+  },
+  "result": {
+    "item": "cbc:totalitarianite_ingot"
+  }
+}

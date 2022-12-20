@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "cbc:totalitarianite_shrapnel_matrix",
+    "cbc:totalitarianite_ore",
+    "cbc:totalitarianite_block",
+    "cbc:nether_totalitarianite_ore",
+    "cbc:deepslate_totalitarianite_ore"
+  ]
+}

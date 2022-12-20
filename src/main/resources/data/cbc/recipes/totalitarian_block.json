@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#LX",
+    "###",
+    "XD#"
+  ],
+  "key": {
+    "#": {
+      "item": "cbc:totalitarianite_ingot"
+    },
+    "X": {
+      "item": "minecraft:nether_star"
+    },
+    "L": {
+      "item": "minecraft:beacon"
+    },
+    "D": {
+      "tag": "minecraft:music_discs"
+    }
+  },
+  "result": {
+    "item": "cbc:totalitarianite_block"
+  }
+}

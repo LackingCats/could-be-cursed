@@ -1,0 +1,34 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NBT",
+    "SXI",
+    "N#N"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:lava_bucket"
+    },
+    "X": {
+      "item": "minecraft:deepslate_coal_ore"
+    },
+    "B": {
+      "item": "minecraft:dragon_breath"
+    },
+    "S": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "I": {
+      "item": "minecraft:ink_sac"
+    },
+    "N": {
+      "item": "cbc:totalitarianite_nugget"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "result": {
+    "item": "cbc:totalitarianite_shrapnel"
+  }
+}
