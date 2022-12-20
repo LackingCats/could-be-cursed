@@ -9,8 +9,8 @@
     "Ascende Supirius"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://askubuntu.com/questions/311558/ssh-permission-denied-publickey",
+    "sources": "https://github.com/LackingCats/could-be-cursed"
   },
 
   "license": "MIT",
@@ -29,7 +29,7 @@
   "depends": {
     "fabricloader": ">=0.14.11",
     "fabric": "*",
-    "minecraft": "1.18.x",
+    "minecraft": "1.18.1",
     "java": ">=17"
   },
   "suggests": {
