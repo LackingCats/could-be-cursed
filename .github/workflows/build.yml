@@ -9,8 +9,9 @@ on: [push, pull_request]
 jobs:
   build:
     strategy:
+    fail-fast: false
       matrix:
-        # Use these Java versions
+        language: [ 'java' ]
         java: [
           17,  # Minimum
         ]
@@ -21,6 +22,10 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+          languages: ${{ matrix.language }}
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@v1
       - name: Setup JDK ${{ matrix.java }}
@@ -31,6 +36,10 @@ jobs:
       - name: Make Gradle wrapper executable
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
+      - name: Perform CodeQL Analysis
+        uses: github/codeql-action/analyze@v2
+        with:
+        category: "/language:${{matrix.language}}"
       - name: Build
         run: ./gradlew build --stacktrace --parallel
       - name: Capture build artifacts
