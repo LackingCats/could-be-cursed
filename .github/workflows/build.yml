@@ -10,13 +10,7 @@ jobs:
   build:
     strategy:
       fail-fast: false
-      matrix:
-        language: [ 'java' ]
-        java: [
-          17,  # Minimum
-        ]
-        os: [ubuntu-22.04]
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -25,25 +19,25 @@ jobs:
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
         with:
-          languages: ${{ matrix.language }}
+          languages: java
       - name: Validate Gradle wrapper
         uses: gradle/wrapper-validation-action@v1
-      - name: Setup JDK ${{ matrix.java }}
+      - name: Setup JDK 17
         uses: actions/setup-java@v3
         with:
           distribution: zulu
-          java-version: ${{ matrix.java }}
+          java-version: 17
       - name: Make Gradle wrapper executable
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
         with:
-        category: "/language:${{matrix.language}}"
+          category: "/language:java"
       - name: Build
         run: ./gradlew build --stacktrace --parallel
       - name: Capture build artifacts
-        if: ${{ runner.os == 'Linux' && matrix.java == '17' }} # Only upload artifacts built from LTS java on one OS
+        if: ${{ runner.os == 'Linux'}} # Only upload artifacts built from LTS java on one OS
         uses: actions/upload-artifact@v3
         with:
           name: Artifacts
