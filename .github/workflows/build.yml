@@ -30,13 +30,13 @@ jobs:
       - name: Make Gradle wrapper executable
         if: ${{ runner.os != 'Windows' }}
         run: chmod +x ./gradlew
+      - name: Build
+        run: ./gradlew build --stacktrace --parallel
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
         with:
           category: "/language:java"
-      - name: Build
-        run: ./gradlew build --stacktrace --parallel
-      - name: Capture build artifacts
+      - name: Capture and upload build artifacts
         if: ${{ runner.os == 'Linux'}} # Only upload artifacts built from LTS java on one OS
         uses: actions/upload-artifact@v3
         with:
