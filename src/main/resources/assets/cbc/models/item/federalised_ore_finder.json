@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "cbc:item/federalised_ore_finder"
+  }
+}

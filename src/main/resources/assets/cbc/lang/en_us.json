@@ -2,6 +2,8 @@
   "item.cbc.totalitarianite_ingot": "Totalitarianite Ingot",
   "item.cbc.totalitarianite_nugget": "Totalitarianite Nugget",
   "item.cbc.totalitarianite_shrapnel": "Totalitarianite Shrapnel",
+  "item.cbc.federalised_ore_finder": "Federalised OreFinder™",
+  "item.cbc.federalised_ore_finder.no_valuables": "[NO ORE FOUND]. Thank you for using this OreFinder™ tool, provided by your lovely government. Please remember that all uses are logged permanently.",
   "block.cbc.totalitarianite_block": "Block of Totalitarianite",
   "block.cbc.totalitarianite_shrapnel_matrix": "Totalitarianite Shrapnel Matrix",
   "block.cbc.totalitarianite_ore": "Totalitarianite Ore",
